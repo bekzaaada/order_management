@@ -5,22 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "orders")
-public class Order {
+@Table(name = "category")
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String oid;
+    private String cid;
     private String title;
-    private int price;
-    private String category_cid;
-    private Date createTime;
-    private Date updateTime;
     private int deleted;
 
 

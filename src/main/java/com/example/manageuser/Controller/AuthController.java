@@ -64,7 +64,7 @@ public class AuthController {
             }
             catch (Exception e)
             {
-                return new Result(0, e.getMessage(), null);
+                return new Result(-3, e.getMessage(), null);
             }
         }
         return new Result(-1,"validation error!",vr);
